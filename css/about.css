@@ -1,0 +1,121 @@
+/* ========== ABOUT ========== */
+
+.about {
+    background: var(--color-light);
+    height: fit-content;
+}
+
+.about h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background: var(--color-med);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.about__left {
+    margin: 2rem;
+}
+
+.about__left p {
+    margin: 1rem 0 3rem;
+}
+
+.about__right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.category {
+    background: var(--color-alternate);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.category:hover {
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+}
+
+.category__icon {
+    background: var(--color-html);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.category:nth-child(2) .category__icon {
+    background: var(--color-css);
+}
+
+.category:nth-child(3) .category__icon {
+    background: var(--color-javascript);
+}
+
+.category:nth-child(4) .category__icon {
+    background: var(--color-react);
+}
+
+.category:nth-child(5) .category__icon {
+    background: var(--color-sql);
+}
+
+.category:nth-child(6) .category__icon {
+    background: var(--color-csharp);
+}
+
+.category h5 {
+    margin: 2rem 0 1rem;
+}
+
+.category p {
+    font-size: 0.85rem;
+}
+
+/* ========== MEDIA QUERIES (TABLETS) ========== */
+
+@media screen and (max-width: 1024px) {
+
+    /* ========== ABOUT ========== */
+
+    .about {
+        height: auto;
+    }
+
+    .about__container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about__left {
+        margin-right: 0;
+    }
+}
+
+/* ========== MEDIA QUERIES (MOBILE) ========== */
+
+@media screen and (max-width: 600px) {
+    
+    /* ========== ABOUT ========== */
+
+    .about__right {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .category {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .category__icon {
+        margin-top: 4px;
+        display: inline-block;
+    }
+}

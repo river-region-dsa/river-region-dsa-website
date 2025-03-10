@@ -1,0 +1,96 @@
+/* ========== INVOLVEMENT ========== */
+
+.involvement {
+    background: var(--color-light);
+    height: fit-content;
+}
+
+.involvement__container {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-med);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.involvement__card-label {
+    background: var(--color-primary);
+    border-radius: 20px;
+    height: fit-content;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.involvement h1 {
+    line-height: 1;
+    text-align: center;
+}
+
+.involvement__card-label p {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.involvement__list {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+.involvement__list li {
+    display: block;
+    align-items: center;
+}
+
+.involvement__list p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+/* ========== MEDIA QUERIES (TABLETS) ========== */
+
+@media screen and (max-width: 1024px) {
+
+    /* ========== INVOLVEMENT ========== */
+
+    /* .inolvement {
+        height: auto;
+    } */
+
+    .involvement__container {
+        grid-template-columns: 1fr;
+        /* gap: 3rem; */
+    }
+
+    .involvement__card-label {
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .involvement__list {
+        padding: 1rem;
+        margin-left: 3rem;
+    }
+}
+
+/* ========== MEDIA QUERIES (MOBILE) ========== */
+
+@media screen and (max-width: 600px) {
+    
+    /* ========== INVOLVEMENT ========== */
+
+    .involvement__card-label {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .involvement__list {
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+}

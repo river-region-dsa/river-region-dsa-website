@@ -1,0 +1,80 @@
+/* ========== CALENDAR ========== */
+
+.calendar {
+    background: var(--color-light);
+    height: fit-content;
+}
+
+.calendar h1 {
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.calendar__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+}
+
+.calendar__left {
+    background: var(--color-med);
+    padding: 2rem;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.calendar__left p {
+    margin: 1rem 0 3rem;
+}
+
+.responsive-calendar {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-med);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 50vw;
+    height: 100vh;
+    justify-self: center;
+}
+
+/* ========== MEDIA QUERIES (TABLETS) ========== */
+
+@media screen and (max-width: 1024px) {
+
+    /* ========== CALENDAR ========== */
+
+    .calendar {
+        height: auto;
+    }
+
+    .calendar__container {
+        grid-template-columns: 40% 60%;
+        gap: 2rem;
+    }
+
+    .calendar__left {
+        margin-right: 0;
+    }
+
+    .responsive-calendar {
+        width: 50vw;
+    }
+}
+
+/* ========== MEDIA QUERIES (MOBILE) ========== */
+
+@media screen and (max-width: 600px) {
+    
+    /* ========== CALENDAR ========== */
+
+    .calendar__container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .responsive-calendar {
+        width: 90vw;
+    }
+}
