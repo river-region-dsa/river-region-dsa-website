@@ -30,8 +30,8 @@
 @font-face {
 
     font-family: ManifoldDSA;
-    src: url('river-region-dsa-website/fonts/ManifoldDSA-Regular.woff2') format('woff2'), 
-         url('river-region-dsa-website/fonts/ManifoldDSA-Regular.woff') format('woff');
+    src: url('fonts/ManifoldDSA-Regular.woff2') format('woff2'), 
+         url('fonts/ManifoldDSA-Regular.woff') format('woff');
 }
 
 body {
